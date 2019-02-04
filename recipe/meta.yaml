@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 1
   skip: True  # [py3k or win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -22,7 +22,7 @@ requirements:
     - setuptools
   run:
     - python
-    - mdanalysis ==0.15.0
+    - mdanalysis
     - numpy
 
 test:
