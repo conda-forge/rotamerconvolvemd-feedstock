@@ -1,6 +1,6 @@
 {% set name = "RotamerConvolveMD" %}
-{% set version = "1.2.0" %}
-{% set sha256 = "1318c7ea95440dfa42f8c4b2343d779654b5a5a555786d7dfdac0145504ea4b0" %}
+{% set version = "1.3.0" %}
+{% set sha256 = "dd94b16224ba915fe38bdbffe1cf90275ffa1ae248f2729ce84ce110dce70d1d" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py3k or win]
   script: python setup.py install --single-version-externally-managed --record record.txt
 
