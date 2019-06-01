@@ -41,8 +41,8 @@ about:
       and spin-label to amide protin distances as probed in paramagnetic relaxation enhancement 
       (PRE) experiments. The spin labels are fitted on trajectories and the spin label mobility
       is taken into account using a rotamer library.
-doc_url: https://www.mdanalysis.org/RotamerConvolveMD
-dev_url: https://github.com/MDAnalysis/RotamerConvolveMD
+  doc_url: https://www.mdanalysis.org/RotamerConvolveMD
+  dev_url: https://github.com/MDAnalysis/RotamerConvolveMD
 
 extra:
   recipe-maintainers:
