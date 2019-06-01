@@ -13,16 +13,16 @@ source:
 
 build:
   number: 0
-  skip: True  # [py3k or win]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
-    - mdanalysis
+    - mdanalysis>=0.16.2
     - numpy
 
 test:
@@ -34,13 +34,15 @@ about:
   license: GPL-2.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'Simple, fast, extensible JSON encoder/decoder for Python'
+  summary: 'Analysis of protein MD trajectories or conformational ensembles in terms of DEER of PRE spin-label distances'
   description: |
       This package analyses molecular dynamics trajectories or conformational ensembles in terms
       of spin-label distances as probed in double electron-electron resonance (DEER) experiments 
       and spin-label to amide protin distances as probed in paramagnetic relaxation enhancement 
       (PRE) experiments. The spin labels are fitted on trajectories and the spin label mobility
       is taken into account using a rotamer library.
+doc_url: https://www.mdanalysis.org/RotamerConvolveMD
+dev_url: https://github.com/MDAnalysis/RotamerConvolveMD
 
 extra:
   recipe-maintainers:
