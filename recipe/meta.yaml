@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python
-    - mdanalysis>=0.16.2
+    - mdanalysis >=0.16.2
     - numpy
 
 test:
@@ -31,7 +31,7 @@ test:
 
 about:
   home: https://github.com/MDAnalysis/RotamerConvolveMD
-  license: GPL-2.0
+  license: GPL-2.0-only
   license_family: GPL
   license_file: LICENSE
   summary: Analysis of protein MD trajectories or conformational ensembles in terms of DEER of PRE spin-label distances
